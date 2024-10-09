@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class NeighborhoodLibrary {
 
 
-
-
     private Book[] books;
     private Scanner scanner;
 
@@ -15,6 +13,12 @@ public class NeighborhoodLibrary {
         books = new Book[20];
         initializeBooks();
     }
+
+    public static void main(String[] args) {
+        NeighborhoodLibrary app = new NeighborhoodLibrary();
+        app.displayHomeScreen();
+    }
+
 
     private void initializeBooks() {
         books[0] = new Book(101121, "978-1-23456-789-0", "Silent Echoes");
@@ -41,4 +45,4 @@ public class NeighborhoodLibrary {
 
 
     }
-
+}
