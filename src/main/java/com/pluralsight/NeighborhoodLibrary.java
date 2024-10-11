@@ -106,7 +106,7 @@ public class NeighborhoodLibrary {
                     break;
                 case 5:
                     exit = true;
-                    System.out.println("Exiting the library system.");
+                    System.out.println("Dear reader you are exiting the library system,have a great day.");
                     break;
                 default:
                     System.out.println("Invalid option reader. Please try again.");
