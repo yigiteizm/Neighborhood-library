@@ -92,7 +92,7 @@ public class NeighborhoodLibrary {
                     library.showCheckedOutBooks();
                     break;
                 case 3:
-                    System.out.print("Dear reader enter the book ID to check out: ");
+                    System.out.print("Dear reader, please enter the book ID to check out: ");
                     int checkOutId = scanner.nextInt();
                     scanner.nextLine();
                     System.out.print("Enter your name: ");
@@ -100,13 +100,13 @@ public class NeighborhoodLibrary {
                     library.checkOutBook(checkOutId, userName);
                     break;
                 case 4:
-                    System.out.print("Dear reader enter the book ID for check in: ");
+                    System.out.print("Dear reader, please enter the book ID for check in: ");
                     int checkInId = scanner.nextInt();
                     library.checkInBook(checkInId);
                     break;
                 case 5:
                     exit = true;
-                    System.out.println("Dear reader you are exiting the library system,have a great day.");
+                    System.out.println("Dear reader, you are exiting the library system,have a great day.");
                     break;
                 default:
                     System.out.println("Invalid option reader. Please try again.");

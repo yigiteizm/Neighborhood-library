@@ -14,7 +14,7 @@ public class Book {
         this.isbn = isbn;
         this.title = title;
         this.isCheckedOut = false;
-        this.checkedOutTo = "";
+        this.checkedOutTo = " ";
     }
 
 
