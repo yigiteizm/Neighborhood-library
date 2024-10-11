@@ -15,33 +15,48 @@ public class Book {
         this.checkedOutTo = null;
     }
 
-    public int getId() {
+    public int getId()
+    {
         return id;
     }
 
-    public String getIsbn() {
+    public String getIsbn()
+    {
         return isbn;
     }
 
-    public String getTitle() {
+    public String getTitle()
+    {
         return title;
     }
 
-    public boolean isCheckedOut() {
+    public boolean isCheckedOut()
+    {
         return isCheckedOut;
     }
 
-    public String getCheckedOutTo() {
+    public String getCheckedOutTo()
+    {
         return checkedOutTo;
     }
 
-    public void checkOut(String name) {
-        this.isCheckedOut = true;
-        this.checkedOutTo = name;
+    public void checkOut(String userName) {
+        if (!isCheckedOut) {
+            this.isCheckedOut = true;
+            this.checkedOutTo = userName;
+            System.out.println(title + " checked out to " + userName);
+        } else {
+            System.out.println(title + " is already checked out.");
+        }
     }
 
+
     public void checkIn() {
-        this.isCheckedOut = false;
-        this.checkedOutTo = null;
+        if (isCheckedOut) {
+            this.isCheckedOut = false;
+            this.checkedOutTo = "";
+            System.out.println(title + " has been checked in.");
+        } else {
+            System.out.println(title + " is not checked out.");
     }
 }
